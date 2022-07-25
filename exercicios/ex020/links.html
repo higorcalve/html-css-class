@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: magenta; /* todos os links ficam azuis*/
+            text-decoration: none; /* sem sublinhado */
+            font-weight: bold; /* em negrito */
+        }
+
+        /* PSEUDOCLASSES são referentes à ESTADOS de elementos*/
+
+        a:visited{ /* quando foram visitados */
+            color: darkmagenta; 
+        }
+
+        a:hover{ /* quando o mouse está em cima */
+            text-decoration: underline; /* sublinhar */
+            color: black; /* ficar preto */
+        }
+
+        a:active { /* quando está clicado */
+            color: green;
+        }
+
+        /* PSEUDOELEMENTOS funcionam pros id e class*/
+
+        a::before{ /* antes de todos os links */
+            content: '☣ ';
+        }
+
+        a::after{ /* depois de todos os links */
+            content: ' [link]'; /* aspas para string */
+            text-decoration: none; /* tira o sublinhado */
+            font-weight: normal; /* tira o negrito */
+            color: darkgrey;
+        }
+
+        .especial::before{ /* pseudoelemento (antes) na pseudoclasse (.especial) */
+            content: '♔ ';
+        }
+
+        .especial::after{ /* pseudoelemento (depois) na pseudoclasse (.especial) */
+            content: ' [♘]';
+        }
+
+        .especial{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/higorcalve" target="_blank" rel="external">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/channel/UCC37SUa0A3Sy_FQnx1u-E-A" target="_blank" rel="external" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank" rel="external">Site do Curso em Vídeo</a></li>
+    </ul>
+</body>
+</html>

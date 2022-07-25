@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+/*
+    em HTML é id="" / em CSS é #
+    em HTML é class / em CSS é .
+
+    id="semantica" só pode ser usado uma única vez no documento (mas pode ser usado em outros)
+    portanto, para usar a mesma configuração usamos classe
+
+    pode usar mais de uma classe
+    pode usar um id e classe (id sobrepõe pois é lido depois de class)
+    style inline sobrepõe interno/local, que sobrepõe externo.
+
+    span no meio do texto para utilizar uma classe
+*/
+
+body{
+    background-color: #96D5F0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1{
+    color: #3D5661;
+}
+
+/* configura primeiro o genérico */
+
+#principal{
+    text-align: center;
+    background-color: #3D5661;
+    color: white;
+}
+
+h2{
+    color: #658FA1;
+}
+
+.basico{
+    color: #65a165;
+}
+
+.intermediario{
+    color: #a1a065;
+}
+
+.avancado{
+    color: #a16565;
+}
+
+.destaque{
+    background-color: rgba(110, 110, 255, 0.300)
+}

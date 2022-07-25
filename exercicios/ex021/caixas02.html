@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header {
+            background-color: whitesmoke;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.300);
+        }
+
+        nav {
+            background-color: darkgray;
+            padding: 3px;
+            border-radius: 5px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.300);
+        }
+
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: whitesmoke;
+            padding: 5px 10px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.300);
+        }
+
+        article {
+            background-color: lightgray;
+            padding: 5px;
+            margin: 10px 0px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.300);
+        }
+
+        article > aside {
+            text-align: end;
+            text-decoration: none;
+            padding-right: 10px;
+            background-color: lightslategray;
+            border-radius: 5px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.300);
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 2px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <nav id="menus">
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <h2>Esportes / Política / Economia</h2>
+        </section>
+        <section id="noticias">
+            <article>
+                <h3>Notícia sobre o Futebol</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, ut. Saepe minus expedita perspiciatis laboriosam hic inventore fugiat veniam voluptas iusto ipsam magni, adipisci eos accusantium, maiores alias, doloribus deleniti.</p>
+                <aside>
+                    <q>Artigo escrito por José da Silva</q>
+                </aside>
+            </article>
+            <article>
+                <h3>Notícia sobre o Brasil</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione porro earum quia nesciunt iure alias dicta nihil animi repellat saepe. Harum dignissimos, adipisci sit odio dolor tempora eius molestiae facere.</p>
+                <aside>
+                    <q>Artigo escrito por João Paulo</q>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Higor Calve</p>
+    </footer>
+</body>
+</html>
