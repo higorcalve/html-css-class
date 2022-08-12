@@ -9,7 +9,7 @@
     padding: 0px;
 }
 
-:root {
+:root { /* declaração de variáveis */
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
     --fonte2: 'Passion One', cursive;
     --fonte3: 'Sriracha', cursive;
@@ -31,54 +31,54 @@ header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /* tudo em letra maíuscula, mas não parece gritando (somente primeiras maiores) */
     font-family: var(--fonte2);
-    font-size: 10vw;
+    font-size: 10vw; /* tamanho da fonte se ajusta à largura da viewport */
 }
 
 header > p {
-    padding-bottom: 50px;
+    padding-bottom: 50px; /* este e o top do h1 poderia ser substituído por um padding no header? */
 }
 
-header a, footer a {
+header a, footer a { /* links sem sublinhado e negrito */
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
 
-header a:hover, footer a:hover {
+header a:hover, footer a:hover { /* sublinhar quando passa o mouse */
     text-decoration: underline;
 }
 
 section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;
+    padding-top: 10vh; /* espaço para permitir o parallax */
+    padding-bottom: 10vh; /* espaço para permitir o parallax */
+    line-height: 2em; /* espaço entre linhas para conforto */
+    padding-left: 30px; /* espaço lateral */
     font-family: var(--fonte3);
-    font-size: 3.5vw;
+    font-size: 3.5vw; /* tamanho da fonte se ajusta à largura da viewport */
 }
 
 section > p {
-    padding-bottom: 2em;
+    padding-bottom: 2em; /* espaço entre as septilhas ... + de 1 <p> separadas dentro de 1 section */
 }
 
-section.normal {
+section.normal { /* fundo section só texto */
     background-color: white;
     color: black;
 }
 
 section.imagem {
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(51, 51, 51); /* fundo de imagem */
     color: white;
-    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5);
-    background-size: cover;
-    background-attachment: fixed;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.5); /* efeito "recorte" na imagem */
+    background-size: cover; /* ajuda para que a imagem caiba */
+    background-attachment: fixed; /* responsável pelo efeito parallax !!! */
 }
 
 section.imagem > p {
-    background-color: rgba(0, 0, 0, 0.500);
-    display: inline-block;
-    padding: 5px;
-    text-shadow: 1px 1px 0px black;
+    background-color: rgba(0, 0, 0, 0.500); /* fundo para permitir a leitura */
+    display: inline-block; /* tamanho da caixa se ajusta à largura do conteúdo */
+    padding: 5px; /* pequeno afastamento na caixa */
+    text-shadow: 1px 1px 0px black; /* ajuda na leitura */
 }
 
 #img01 {
