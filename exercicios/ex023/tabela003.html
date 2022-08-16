@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclando Células</h1>
+        <!--
+            colspan = espanção de coluna
+            rowspan = espançao de linha
+
+            se você apagar o <td> ele recua a célula seguinte à esquerda! então use o span
+        -->
+    <table>
+        <tr> <!--Linha 01-->
+            <td>A</td>
+            <td colspan="2">B</td> <!-- B ocupa 2 colunas (no lugar do C )-->
+            <!-- C -->
+        </tr>
+        <tr> <!--Linha 02-->
+            <td rowspan="3">D</td> <!-- D ocupa 3 linhas (no lugar do G e do J )-->
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr> <!--Linha 03-->
+            <!-- G -->
+            <td>H</td>
+            <td rowspan="2">I</td> <!-- I ocupa 2 linhas (no lugar do L )-->
+        </tr>
+        <tr> <!--Linha 04-->
+            <!-- J -->
+            <td>K</td>
+            <!-- L -->
+        </tr>
+    </table>
+</body>
+</html>
