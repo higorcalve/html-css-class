@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* Todas as demais mídias */
+
+/*
+Typical Device Breakpoints
+
+Pequenas telas: até 600px
+Celulares: 600px até 768px
+Tablets: 769px até 992px
+Desktops: 993px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+/* COMO É MOBILE FIRST, NÃO PRECISA:
+@media screen and (max-width: 600px) {
+    pequenas telas
+}
+
+@media screen and (min-width: 600) and (max-width: 768px) {
+    celulares
+}
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    img#tablet {
+        display: block;
+    }
+    img#pc , img#tv , img#print , img#phone {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){ /* DESKTOP */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    img#pc {
+        display: block;
+    }
+    img#tablet , img#tv , img#print , img#phone {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px) { /* GRANDES TELAS */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    img#tv {
+        display: block;
+    }
+    img#tablet , img#pc , img#print , img#phone {
+        display: none;
+    }
+}
+
+@media print { /* IMPRESSÃO */
+    body {
+        background-image: url(../imagens/back-print.jpg); /* Desnecessário pois não imprime background */
+    }
+
+    main {
+        border: 1px solid black;
+    }
+
+    main::after {
+        content: 'Esta impressão foi feita através do Curso de HTML e CSS do https://www.cursoemvideo.com';
+        text-decoration: overline;
+    }
+
+    main h1 {
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+    }
+    img#print {
+        display: block;
+    }
+    img#tablet , img#pc , img#tv , img#phone {
+        display: none;
+    }
+}
